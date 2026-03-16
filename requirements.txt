@@ -1,3 +1,8 @@
 python-dotenv
 pandas
 numpy
+pymongo
+certifi
+
+# once the project is completed then use this with setup.py, not now
+# -e .
