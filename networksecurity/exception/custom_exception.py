@@ -14,7 +14,7 @@ class NetworkSecurityException(Exception):
         self.file_name, self.lineno, str(self.error_message))
 
 
-## this code is for just to test logging
+## this code is for just to test exception is working fine or not?
 '''
 if __name__=='__main__':
     try:
