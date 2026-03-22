@@ -5,6 +5,8 @@ pymongo
 certifi
 pymongo[srv]==3.11
 scikit-learn
+dill
+pyaml
 
 # once the project is completed then use this with setup.py, not now
 # -e .
