@@ -7,6 +7,7 @@ pymongo[srv]==3.11
 scikit-learn
 dill
 pyaml
+mlflow
 
 # once the project is completed then use this with setup.py, not now
 # -e .
