@@ -8,6 +8,8 @@ An end-to-end, production-grade Machine Learning pipeline designed to classify w
 
 This system ingests raw website data, validates and transforms it, trains a classification model, and serves predictions through a scalable pipeline.
 
+> Designed to handle large-scale data and production deployment with clear separation of concerns across pipeline stages.
+
 The entire workflow is designed to be:
 
 * **Modular**
@@ -92,7 +94,7 @@ Data Ingestion → Data Validation → Data Transformation → Model Training �
 
 ```bash
 git clone [https://github.com/sagarraii/Cyber-Sentinel.git]
-cd network-security
+cd Cyber-Sentinel
 ```
 
 ### 2. Create Virtual Environment
@@ -105,7 +107,7 @@ pip install -r requirements.txt
 
 ### 3. Environment Variables
 
-* Create a .env file in the root directory and add your credentials:
+* Create a `.env` file in the root directory:
 
 ```bash
 MONGO_DB_URL="your_mongodb_atlas_url"
