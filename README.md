@@ -1,5 +1,13 @@
 # 🔐 Network Security ML Pipeline — Phishing Website Detection
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-orange)
+![MLflow](https://img.shields.io/badge/Tracking-MLflow-red)
+![AWS](https://img.shields.io/badge/Cloud-AWS-yellow)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-green)
+![Docker](https://img.shields.io/badge/Container-Docker-blue)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-black)
+
 An end-to-end, production-grade Machine Learning pipeline designed to classify whether a website is **legitimate or phishing (malicious)**. This project follows industry best practices including modular architecture, pipeline orchestration, experiment tracking, cloud integration, and CI/CD.
 
 ---
