@@ -194,6 +194,9 @@ Custom metrics implemented:
 - Recall: 95%
 - F1 Score: 93%
 
+- Dataset is moderately balanced  
+- No data leakage; proper train-test split applied
+  
 Located in:
 
 ```
