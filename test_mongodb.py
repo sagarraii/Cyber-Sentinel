@@ -1,8 +1,13 @@
-
 from pymongo.mongo_client import MongoClient
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority"
+uri = os.getenv("MONGO_DB_URL")
+
+if not uri:
+    raise ValueError("MONGO_DB_URL is not set in environment variables")
 
 # Create a new client and connect to the server
 client = MongoClient(uri)
@@ -10,6 +15,6 @@ client = MongoClient(uri)
 # Send a ping to confirm a successful connection
 try:
     client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
+    print("✅ Connected to MongoDB successfully!")
 except Exception as e:
-    print(e)
+    print("❌ Connection failed:", e)
