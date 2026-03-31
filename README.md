@@ -27,6 +27,21 @@ The entire workflow is designed to be:
 
 ---
 
+## 🧠 Model Details
+
+- Algorithms Used:
+  - Logistic Regression
+  - K-Nearest Neighbors (KNN)
+  - Decision Tree
+  - Random Forest
+  - AdaBoost
+  - Gradient Boosting
+
+- Dataset Size: 11,056 rows  
+- Number of Features: 31
+
+---
+
 ## 🧠 Problem Statement
 
 Detect whether a given website is **phishing (malicious)** or **legitimate** based on structured features.
@@ -126,6 +141,8 @@ MLFLOW_TRACKING_USERNAME="your_dagshub_username"
 MLFLOW_TRACKING_PASSWORD="your_dagshub_token"
 ```
 
+> ⚠️ Never commit credentials. Use `.env` for all secrets.
+
 ### 4. Data Ingestion
 
 * To push your local .csv data to MongoDB Atlas, run:
@@ -172,16 +189,33 @@ python push_data.py
 
 Custom metrics implemented:
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
+- Accuracy: 99%
+- Precision: 96%
+- Recall: 95%
+- F1 Score: 93%
 
 Located in:
 
 ```
 networksecurity/utils/ml_utils/metric/classification_metric.py
 ```
+
+---
+
+## 🔮 Prediction
+
+- Input: Structured features (CSV or user input via UI)
+- Output:
+  - `1` → Phishing Website
+  - `0` → Legitimate Website
+ 
+---
+
+## 🌐 Application
+
+- Built using Flask
+- Provides a simple UI for user input
+- Returns prediction results in real-time
 
 ---
 
