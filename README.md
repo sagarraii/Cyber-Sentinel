@@ -315,8 +315,3 @@ python test_mongodb.py
 
 ---
 
-## ⭐ Final Note
-
-This is not a toy notebook. It’s a **production-style ML system** — designed the way real pipelines are built in industry: clean, traceable, and scalable.
-
-If it breaks, debug it. If it works, scale it.
