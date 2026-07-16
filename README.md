@@ -1,4 +1,4 @@
-# 🔐 Network Security ML Pipeline — Phishing Website Detection
+# Web Network Security ML Pipeline — Phishing Website Detection
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-orange)
@@ -12,7 +12,7 @@ An end-to-end, production-grade Machine Learning pipeline designed to classify w
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This system ingests raw website data, validates and transforms it, trains a classification model, and serves predictions through a scalable pipeline.
 
@@ -27,7 +27,7 @@ The entire workflow is designed to be:
 
 ---
 
-## 🧠 Model Details
+##  Model Details
 
 - Algorithms Used:
   - Logistic Regression
@@ -42,13 +42,13 @@ The entire workflow is designed to be:
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Detect whether a given website is **phishing (malicious)** or **legitimate** based on structured features.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Data Ingestion → Data Validation → Data Transformation → Model Training → Evaluation → Deployment
@@ -56,7 +56,7 @@ Data Ingestion → Data Validation → Data Transformation → Model Training �
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -98,7 +98,7 @@ Data Ingestion → Data Validation → Data Transformation → Model Training �
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * **Programming Language:** Python
 * **ML Framework:** Scikit-learn
@@ -111,7 +111,7 @@ Data Ingestion → Data Validation → Data Transformation → Model Training �
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -141,7 +141,7 @@ MLFLOW_TRACKING_USERNAME="your_dagshub_username"
 MLFLOW_TRACKING_PASSWORD="your_dagshub_token"
 ```
 
-> ⚠️ Never commit credentials. Use `.env` for all secrets.
+>  Never commit credentials. Use `.env` for all secrets.
 
 ### 4. Data Ingestion
 
@@ -153,7 +153,7 @@ python push_data.py
 
 ---
 
-## 🔄 Pipeline Workflow
+##  Pipeline Workflow
 
 ### 1. Data Ingestion
 
@@ -185,7 +185,7 @@ python push_data.py
 
 ---
 
-## 📊 Model Evaluation
+##  Model Evaluation
 
 Custom metrics implemented:
 
@@ -205,7 +205,7 @@ networksecurity/utils/ml_utils/metric/classification_metric.py
 
 ---
 
-## 🔮 Prediction
+##  Prediction
 
 - Input: Structured features (CSV or user input via UI)
 - Output:
@@ -214,7 +214,7 @@ networksecurity/utils/ml_utils/metric/classification_metric.py
  
 ---
 
-## 🌐 Application
+##  Application
 
 - Built using Flask
 - Provides a simple UI for user input
@@ -222,7 +222,7 @@ networksecurity/utils/ml_utils/metric/classification_metric.py
 
 ---
 
-## ☁️ Cloud Integration
+##  Cloud Integration
 
 * **AWS S3:** Model and artifact storage
 * **AWS ECR:** Docker image registry
@@ -230,7 +230,7 @@ networksecurity/utils/ml_utils/metric/classification_metric.py
 
 ---
 
-## 🐳 Docker Usage
+##  Docker Usage
 
 ### Build Image
 
@@ -246,7 +246,7 @@ docker run -p 8080:8080 networksecurity-app
 
 ---
 
-## 🔁 CI/CD Pipeline
+##  CI/CD Pipeline
 
 GitHub Actions automates:
 
@@ -262,7 +262,7 @@ File:
 
 ---
 
-## ▶️ Run the Pipeline
+##  Run the Pipeline
 
 ```bash
 python main.py
@@ -270,7 +270,7 @@ python main.py
 
 ---
 
-## 🌐 Run the Application
+##  Run the Application
 
 ```bash
 python app.py
@@ -278,7 +278,7 @@ python app.py
 
 ---
 
-## 📌 Key Features
+##  Key Features
 
 * Modular pipeline design
 * End-to-end ML lifecycle
@@ -290,7 +290,7 @@ python app.py
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 python test_mongodb.py
@@ -298,7 +298,7 @@ python test_mongodb.py
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * Real-time streaming using Kafka
 * Advanced model tuning (Optuna / Bayesian Optimization)
@@ -307,7 +307,7 @@ python test_mongodb.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Name: Sagar Rai**
 
